@@ -11,13 +11,13 @@ sudo apt install nginx
 ```
 sudo systemctl status nginx
 ```
-![Image](../Images/prj-2-nginx-status.png)
+![Image](./Images/prj-2-nginx-status.png)
 
 * Security group edit
   HTTP/ TCP port 80
 * I test nginx server to know if its responding to internet with IP address on  url
 
-![Image](../Images/prj-2-nginx-welcome.png)
+![Image](./Images/prj-2-nginx-welcome.png)
 
 * install Mysql
 ```
@@ -29,7 +29,7 @@ sudo mysql_secure_installation
 ```
 sudo mysql
 ```
-![Image](../Images/prj-2-mysql.png)
+![Image](./Images/prj-2-mysql.png)
 
 * Installing PHP,configuring Nginxto use PHP Processor and Testing PHP with Nginx
 
@@ -106,13 +106,13 @@ phpinfo();
 
 * add "/info.php to the ip addr on url"
 
-![Image](../Images/prj-2-php.png)
+![Image](./Images/prj-2-php.png)
 
 * Retrieving data from MySQL Database with PHP
 ```
 sudo mysql
 ```
-![Image](../Images/prj-2-mysql-create.png)
+![Image](./Images/prj-2-mysql-create.png)
 * Test if new user has permission to login to mysql console
 
 ```
@@ -121,7 +121,7 @@ mysql -u example_user -p
 ```
 SHOW DATABASES;
 ```
-![Image](../Images/prj-2-show-database.png)
+![Image](./Images/prj-2-show-database.png)
 
 ```
 CREATE TABLE example_database.todo_list ( item_id INT AUTO_INCREMENT, content VARCHAR(255),
@@ -131,7 +131,7 @@ INSERT INTO example_database.todo_list (content) VALUES ("My first important ite
 ```
 SELECT * FROM example_database.todo_list;
 ```
-![Image](../Images/prj-2-database-table.png)
+![Image](./Images/prj-2-database-table.png)
 
 ```
 Nano /var/www/projectLEMP/todo_list.php
@@ -157,7 +157,7 @@ try {
 ```
 * add “todo_list.php” to theaddress on url
 
-![Image](../Images/prj-2-todo.png)
+![Image](./Images/prj-2-todo.png)
 
 
 
